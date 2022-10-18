@@ -15,6 +15,9 @@
 		EFC2A23628F209D500A031FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2A23528F209D500A031FD /* LoginView.swift */; };
 		EFC2A23828F20A2B00A031FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2A23728F20A2B00A031FD /* HomeView.swift */; };
 		EFE215ED28FF548F005F468A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE215EC28FF548F005F468A /* UserViewModel.swift */; };
+		EFE215F328FF5BD7005F468A /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE215F228FF5BD7005F468A /* ForgotPasswordView.swift */; };
+		EFE215F528FF5BE7005F468A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE215F428FF5BE7005F468A /* SignUpView.swift */; };
+		EFE215F728FF5BF8005F468A /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE215F628FF5BF8005F468A /* SignInWithEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		EFC2A23528F209D500A031FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EFC2A23728F20A2B00A031FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EFE215EC28FF548F005F468A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EFE215F228FF5BD7005F468A /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		EFE215F428FF5BE7005F468A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EFE215F628FF5BF8005F468A /* SignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +65,13 @@
 		EFC2A22228F203FD00A031FD /* Firebase Login */ = {
 			isa = PBXGroup;
 			children = (
+				EFE215EE28FF5B60005F468A /* Firebase */,
 				EFC2A22328F203FD00A031FD /* Firebase_LoginApp.swift */,
 				EFC2A22528F203FD00A031FD /* ContentView.swift */,
 				EFC2A22728F203FE00A031FD /* Assets.xcassets */,
 				EFC2A22928F203FE00A031FD /* Preview Content */,
 				EFC2A23128F2044900A031FD /* UserInfo.swift */,
-				EFC2A23528F209D500A031FD /* LoginView.swift */,
 				EFC2A23728F20A2B00A031FD /* HomeView.swift */,
-				EFE215EC28FF548F005F468A /* UserViewModel.swift */,
 			);
 			path = "Firebase Login";
 			sourceTree = "<group>";
@@ -77,6 +82,42 @@
 				EFC2A22A28F203FE00A031FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFE215EE28FF5B60005F468A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				EFE215F128FF5B81005F468A /* Auth */,
+				EFE215F028FF5B75005F468A /* Firestore */,
+				EFE215EF28FF5B70005F468A /* Views */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		EFE215EF28FF5B70005F468A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFC2A23528F209D500A031FD /* LoginView.swift */,
+				EFE215F228FF5BD7005F468A /* ForgotPasswordView.swift */,
+				EFE215F428FF5BE7005F468A /* SignUpView.swift */,
+				EFE215F628FF5BF8005F468A /* SignInWithEmailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFE215F028FF5B75005F468A /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		EFE215F128FF5B81005F468A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EFE215EC28FF548F005F468A /* UserViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE215F728FF5BF8005F468A /* SignInWithEmailView.swift in Sources */,
 				EFC2A22628F203FD00A031FD /* ContentView.swift in Sources */,
+				EFE215F328FF5BD7005F468A /* ForgotPasswordView.swift in Sources */,
 				EFE215ED28FF548F005F468A /* UserViewModel.swift in Sources */,
 				EFC2A23228F2044900A031FD /* UserInfo.swift in Sources */,
+				EFE215F528FF5BE7005F468A /* SignUpView.swift in Sources */,
 				EFC2A23628F209D500A031FD /* LoginView.swift in Sources */,
 				EFC2A23828F20A2B00A031FD /* HomeView.swift in Sources */,
 				EFC2A22428F203FD00A031FD /* Firebase_LoginApp.swift in Sources */,
